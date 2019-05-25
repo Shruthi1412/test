@@ -7,7 +7,7 @@ define('USER','xw52px19w9l8h2de');// user in our case is root
 
 define('PASS','h05d52sz0zr44qgd');//password here is null or blank that is no password
 
-define('DB','leave');
+define('DB','a387nmivp73xo300');
 
 //Connecting to Database
 
