@@ -12,10 +12,10 @@
 </head>
 <body>
  
-    <?php require_once 'process.php'; ?>
+    <?php require_once 'https://employeeleaveapplication.herokuapp.com/process.php'; ?>
     
     <div class="row justify-content-center">
-        <form action="process.php" method="POST">
+        <form action="https://employeeleaveapplication.herokuapp.com/process.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $id; ?>">
         <div class="form-group">
         <label>Name</label>
@@ -67,7 +67,7 @@
     <?php        endif;?>
     <div class="container">
     <?php
-    $mysqli = new mysqli('localhost','root','','crud') or die(mysqli_error($mysqli));
+    $mysqli = new mysqli('arfo8ynm6olw6vpn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com','xw52px19w9l8h2de','h05d52sz0zr44qgd','a387nmivp73xo300') or die(mysqli_error($mysqli));
     $result = $mysqli->query("SELECT * FROM data") or die($mysqli->error);
    // pre_r($result);
  
@@ -92,9 +92,9 @@
                 <td><?php echo $row['password'];?></td>
                 <td><?php echo $row['designation'];?></td>
                 <td>
-                    <a href="admin.php?edit=<?php echo $row['id'];?>"
+                    <a href="https://employeeleaveapplication.herokuapp.com/admin.php?edit=<?php echo $row['id'];?>"
                        class="btn btn-info">Edit</a>
-                    <a href="process.php?delete=<?php echo $row['id'];?>"
+                    <a href="https://employeeleaveapplication.herokuapp.com/process.php?delete=<?php echo $row['id'];?>"
                        class="btn btn-danger">Delete</a>
                        
                 </td>
