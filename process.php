@@ -18,7 +18,7 @@ if(isset($_POST['save'])){
      $_SESSION['message'] = "Rececord has been saved!";
     $_SESSION['msg_type'] = "success";
     
-    header("location: admin.php");
+    header("location: https://employeeleaveapplication.herokuapp.com/admin.php");
     
 }
 
@@ -27,7 +27,7 @@ if(isset($_GET['delete'])){
     $mysqli->query("DELETE FROM data WHERE id=$id") or die($mysqli->error());
       $_SESSION['message'] = "Rececord has been deleted!";
     $_SESSION['msg_type'] = "danger";
-    header("location: admin.php");
+    header("location: https://employeeleaveapplication.herokuapp.com/admin.php");
 }
 
 if(isset($_GET['edit'])){
@@ -53,17 +53,17 @@ if(isset($_POST['update'])){
     $mysqli->query("UPDATE data SET name='$name', email='$email', password='$password', designation='$designation' WHERE id=$id") or die($mysqli->error);
     $_SESSION['message'] = "Record has been updated!";
     $_SESSION['msg_type'] = 'warning';
-    header('location: admin.php');
+    header('location: https://employeeleaveapplication.herokuapp.com/admin.php');
 }
 
 if(isset($_POST['leave'])){
-    header('location: leave.php');
+    header('location: https://employeeleaveapplication.herokuapp.com/leave.php');
     
 }
 
 if(isset($_POST['logout'])){
    $_SESSION['status']!="Active";
-    header('location: login.php');
+    header('location: https://employeeleaveapplication.herokuapp.com/login.php');
 }
 
 
