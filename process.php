@@ -1,6 +1,6 @@
 <?php
 session_start();
-$mysqli = new mysqli('localhost','root','','crud') or die(mysqli_error($mysqli));
+$mysqli = new mysqli('arfo8ynm6olw6vpn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com','xw52px19w9l8h2de','h05d52sz0zr44qgd','a387nmivp73xo300') or die(mysqli_error($mysqli));
 
 $id=0;
 $update = false;
