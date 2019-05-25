@@ -1,6 +1,6 @@
 <?php
 session_start();
-$mysqli = new mysqli('localhost','root','','crud') or die(mysqli_error($mysqli));
+$mysqli = new mysqli('arfo8ynm6olw6vpn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com','xw52px19w9l8h2de','h05d52sz0zr44qgd','a387nmivp73xo300') or die(mysqli_error($mysqli));
 
 $id=0;
 $update = false;
@@ -15,7 +15,7 @@ if(isset($_POST['save'])){
      $_SESSION['message'] = "Rececord has been saved!";
     $_SESSION['msg_type'] = "success";
     
-    header("location: leave.php");
+    header("location: https://employeeleaveapplication.herokuapp.com/leave.php");
     
 }
 
@@ -24,7 +24,7 @@ if(isset($_GET['delete'])){
     $mysqli->query("DELETE FROM leave1 WHERE id=$id") or die($mysqli->error());
       $_SESSION['message'] = "Rececord has been deleted!";
     $_SESSION['msg_type'] = "danger";
-    header("location: leave.php");
+    header("location: https://employeeleaveapplication.herokuapp.com/leave.php");
 }
 
 if(isset($_GET['edit'])){
@@ -46,14 +46,14 @@ if(isset($_POST['update'])){
     $mysqli->query("UPDATE leave1 SET leavetypes='$leavetypes', numleave='$numleave' WHERE id=$id") or die($mysqli->error);
     $_SESSION['message'] = "Record has been updated!";
     $_SESSION['msg_type'] = 'warning';
-    header('location: leave.php');
+    header('location: https://employeeleaveapplication.herokuapp.com/leave.php');
 }
 
 
 
 if(isset($_POST['logout'])){
    $_SESSION['status']!="Active";
-    header('location: login.php');
+    header('location: https://employeeleaveapplication.herokuapp.com/login.php');
 }
 
 
