@@ -1,5 +1,5 @@
 <?php
-$conn= mysqli_connect("localhost","root","","test_db");
+$conn= mysqli_connect("arfo8ynm6olw6vpn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com","xw52px19w9l8h2de","","a387nmivp73xo300","h05d52sz0zr44qgd");
 if(isset($_POST['btnSubmit']))
 {
     $txtEmail = $_POST['txtEmail'];
