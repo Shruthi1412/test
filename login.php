@@ -9,7 +9,7 @@ if(isset($_POST['btnSubmit']))
     if($res=mysqli_fetch_array($result))
     {
         echo "<script>alert(\"Login Successful\");</script>";
-        header("location: admin.php");
+        header("location: https://employeeleaveapplication.herokuapp.com/admin.php");
         
         
     }
