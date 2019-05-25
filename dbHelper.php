@@ -1,11 +1,11 @@
 <?php
 //Defining Constants
 
-define('HOST','localhost');// hostname/machineip/serverip is localhost
+define('HOST','arfo8ynm6olw6vpn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com');// hostname/machineip/serverip is localhost
 
-define('USER','root');// user in our case is root
+define('USER','xw52px19w9l8h2de');// user in our case is root
 
-define('PASS','');//password here is null or blank that is no password
+define('PASS','h05d52sz0zr44qgd');//password here is null or blank that is no password
 
 define('DB','leave');
 
